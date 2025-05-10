@@ -1,0 +1,98 @@
+{
+  "address": "11111111111111111111111111111111",
+  "metadata": {
+    "name": "solana_split",
+    "version": "0.1.0",
+    "spec": "0.1.0"
+  },
+  "instructions": [
+    {
+      "name": "initialize_split",
+      "discriminator": [
+        53,
+        17,
+        92,
+        9,
+        84,
+        151,
+        173,
+        78
+      ],
+      "accounts": [
+        {
+          "name": "split_account",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "user",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "withdraw",
+      "discriminator": [
+        183,
+        18,
+        70,
+        156,
+        148,
+        109,
+        161,
+        34
+      ],
+      "accounts": [
+        {
+          "name": "split_account",
+          "writable": true
+        },
+        {
+          "name": "recipient",
+          "writable": true,
+          "signer": true
+        }
+      ],
+      "args": []
+    }
+  ],
+  "accounts": [
+    {
+      "name": "SplitAccount",
+      "discriminator": [
+        96,
+        124,
+        192,
+        177,
+        178,
+        219,
+        22,
+        146
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "SplitAccount",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "authority",
+            "type": "pubkey"
+          },
+          {
+            "name": "total_amount",
+            "type": "u64"
+          }
+        ]
+      }
+    }
+  ]
+}

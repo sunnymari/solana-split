@@ -1,0 +1,12 @@
+[programs.devnet]
+solana_split = "ohxsCJitxBbnfkprnk6YrXJrCU8XZSLHLUmxNyNrgyV"
+
+[workspace]
+members = ["programs/solana_split"]
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[toolchain]
+anchor_version = "0.31.1"
