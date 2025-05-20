@@ -13,19 +13,22 @@
   "description": "",
   "dependencies": {
     "@project-serum/anchor": "^0.26.0",
-    "@solana/wallet-adapter-base": "^0.9.23",
-    "@solana/wallet-adapter-react": "^0.15.35",
-    "@solana/wallet-adapter-react-ui": "^0.9.34",
-    "@solana/wallet-adapter-wallets": "^0.19.25",
-    "@solana/web3.js": "^1.87.6",
+    "@solana/wallet-adapter-base": "^0.9.26",
+    "@solana/wallet-adapter-react": "^0.15.38",
+    "@solana/wallet-adapter-react-ui": "^0.9.38",
+    "@solana/wallet-adapter-solflare": "^0.6.31",
+    "@solana/wallet-adapter-wallets": "^0.19.36",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-refresh": "^0.17.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
-    "@vitejs/plugin-react": "^4.2.1",
-    "typescript": "^5.2.2",
-    "vite": "^5.0.8"
+    "@solana/web3.js": "^1.98.2",
+    "@types/node": "^22.15.19",
+    "@types/react": "^18.3.21",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.4.1",
+    "typescript": "^5.8.3",
+    "vite": "^5.4.19"
   }
 }

@@ -38,6 +38,37 @@ export type SolanaSplit = {
         }
       ],
       "args": []
+    },
+    {
+      "name": "split",
+      "accounts": [
+        {
+          "name": "sender",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "recipient1",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "recipient2",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ]
     }
   ],
   "accounts": [
@@ -101,6 +132,37 @@ export const IDL: SolanaSplit = {
         }
       ],
       "args": []
+    },
+    {
+      "name": "split",
+      "accounts": [
+        {
+          "name": "sender",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "recipient1",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "recipient2",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ]
     }
   ],
   "accounts": [
